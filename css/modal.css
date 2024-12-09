@@ -1,0 +1,60 @@
+.modal{
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 95%; 
+    height: auto; 
+    padding: 2rem; 
+     display: none;  
+    
+}
+
+.contenido-modal{
+    background-color: white; 
+    height: auto;
+    padding: 2.5rem; 
+    border-radius: 1rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.header-modal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-titulo{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    
+}
+#imgModal{
+    width: 30rem;  
+    align-self: center;
+    border-radius: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+/* Estilos contenido modal */
+.datosPokemon{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.info-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.evo{
+    cursor: pointer;
+}
+
+@media (min-width: 768px) { 
+    .info-modal{
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+
+

@@ -1,0 +1,71 @@
+:root{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-color: #C8D1D7;
+    font-family: "Raleway", sans-serif;
+}
+*, 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.contenedor{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 120rem; 
+    
+    
+
+}
+.centrar-texto{
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.menu{
+    /* background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(1rem); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    background-image: url(../img/fondo2.jpg);
+    padding: 2rem 0;
+    
+}
+
+
+.logo{
+    width: 25rem;
+}
+
+.menu-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+#buscar{
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: solid 2px;
+    border-color: rgb(3, 102, 201);
+    width: auto;
+}
+@media (min-width: 768px) { 
+    .menu-contenido{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+

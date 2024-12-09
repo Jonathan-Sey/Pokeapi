@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">    
+    <link rel="stylesheet" href="/css/app.css">
+    <title>PokeApi</title>
+</head>
+<body>
+    <header class="menu">
+        <div class=" contenedor ">
+            <div class="menu-contenido">
+                <a href="/index.html">
+                    <img class="logo" src="./img/logo.png" alt="logo">
+                </a>
+                <div class="buscador">
+                    <input type="text" id="buscar" placeholder="Buscar">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor pokemon" id="datos">
+            <div class="categoria">
+                <button class="boton">Tipo</button>
+                <button class="boton">Genero</button>
+            </div>
+            
+            <div class="contenido-pokemon">
+                <div class="grid">
+                    <div class="info-pokemon">
+                        <img  id="imgPokemon" class="img-pokemon" src="" alt="imagen"> 
+                        <h3 id="nombre">Pokemon</h3>
+                        <button class="botones boton" id="detalle">Ver detalle</button>
+                    </div>                
+                    <div class="evolucion-pokemon">
+                        <img id="g1" class="evo" src="" alt="">
+                        <img id="g2" class="evo" src="" alt="">
+                        <img id="g3" class="evo" src="" alt="">
+                    </div>
+                </div>
+                    
+                    
+            </div>
+    </main>
+
+    <!-- modal -->
+    <div class="contenedor modal" id="modal">
+        <div class="contenido-modal">
+            <div class="header-modal">
+                <h1 class="header-titulo" id="modal-name" >Pokemon</h1>
+                <button class="boton" id="cerrar">Cerrar</button>
+            </div>
+            <div class="info-modal">
+                <img  id="imgModal" class="" src="" alt="imagen"> 
+                <div class="datosPokemon">
+                    <p id="id"></p>
+                    <p id="Altura"></p>
+                    <p id="Peso" ></p>
+                    <p id="Tipo" ></p>
+                    <img id="img" src="" alt=""> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
