@@ -1,21 +1,29 @@
-.pokemon{
+ .pokemon{
     margin-top: 5rem;
-    background-color: #EEF2F4;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    padding: 2rem;
-    border-radius: 3rem;
+    margin-bottom: 8rem;
     
-}
+} 
 .categoria{
     margin: 2rem 0;
 }
-.contenido-pokemon{
+
+.contenido-pokemones{
     background-color: white;
     padding: 1.5rem;
     border-radius: 3rem;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     display: flex;
     flex-direction: column;
+}
+.contenido-pokemones{
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.contenedor-popkemon{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
 }
 
 .evolucion-pokemon{
@@ -30,18 +38,15 @@
     grid-template-columns: 68.5% auto;
     /* gap: 0.5rem; */
 }
-#detalle{
+.detalle{
     width: 100%;
 }
 
-
-#nombre{
+.nombre{
     display: inline-flex;
     justify-content: center;
     letter-spacing: 0.3rem;
     font-size: 1.5rem;
-    
-    
 }
 
 .botones{
@@ -68,13 +73,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.ver-mas{
+    margin-top: 7rem;
+    display: inline-flexbox;
+    text-align: center;
+}
+.boton-mas{
+    border-radius: 5rem;
+    padding: 2rem 7rem;
 }
 
 
-
-@media (min-width: 360px) { 
-    .contenido-pokemon{
-        width: 30rem;
+@media (min-width: 768px) { 
+    .contenedor-popkemon{
+        grid-template-columns: repeat(3,1fr);
+    }
+ 
+}
+@media (min-width: 1200px) { 
+    .contenedor-popkemon{
+        grid-template-columns: repeat(4,1fr);
     }
   
 }

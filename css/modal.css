@@ -6,8 +6,7 @@
     width: 95%; 
     height: auto; 
     padding: 2rem; 
-     display: none;  
-    
+     /* display: none;   */
 }
 
 .contenido-modal{
@@ -29,7 +28,7 @@
     letter-spacing: 1rem;
     
 }
-#imgModal{
+.imgModal{
     width: 30rem;  
     align-self: center;
     border-radius: 2rem;
@@ -48,6 +47,16 @@
 }
 .evo{
     cursor: pointer;
+}
+.contenedor.modal {
+    display: none; /* Ocultar por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transpar*/
 }
 
 @media (min-width: 768px) { 
