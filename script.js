@@ -143,6 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	const boton = document.getElementById('mas'); //boton ver mas
 	boton.addEventListener('click', async () => { 
         limitador += 20;// sumador 
+        const contenidoPokemon = document.querySelector('.contenedor-popkemon');
+        contenidoPokemon.innerHTML = ''; // Limpiar contenedor
 	    await prueba(); // llamamos a prueba pero ahora el limitador vale + 20
 	}); 
 });
